@@ -17,47 +17,40 @@
 <body>
   <header>
     <img src="images/logo.png" alt="logo" style = "height:200px;">
-    <div class="navigation">
-      <nav>
-        <ul>
-          <li><a>About US</a>
-            <ul>
-              <li><a href="index.html">Who are we?</a></li>
-              <li><a href="machineLearning.html">Personal Information</a></li>
-              <li><a href="nlp.html">Skills & Jobs</a></li>
-            </ul>
-          </li>
+    <nav>
+      <ul class="nav-menu nav-center">
 
-          <li><a>Carrer Plans</a>
-            <ul>
-              <li><a href="index.html">Career Plans</a></li>
-              <li><a href="jobDescriptions.html">Job Descriptions</a></li>
-
-            </ul>
-          </li>
-
-            <li><a>IT Industry</a>
-              <ul>
-                <li><a href="industryData.html">Industry Data</a></li>
-                <li><a href="itWork.html">IT Work</a></li>
-                <li><a>IT Technologies</a>
-                    <ul>
-                      <li><a href="cybersecurity.html">Cyber Security</a></li>
-                      <li><a href="machineLearning.html">Machine Learning</a></li>
-                      <li><a href="nlp.html">NLP</a></li>
-                      <li><a href="simpleComputingDevices.html">Simple Computing</a></li>
-                    </ul>
-                </li>
-              </ul>
-            </li>
-
+          <li><a>@Us</a>
+                <ul>
+                  <li><a href="index.html">Team Profile</a></li>
+                      <li><a href="careerPlans.html">Career Plans</a></li>
+                      <li><a href="groupProcess.html">Group Processes</a></li>
+                </ul>
+        </li>
+                    <li><a>IT Industry</a>
+                      <ul>
+                        <li><a href="industryData.html">Industry Data</a></li>
+                        <li><a href="itWork.html">IT Work</a></li>
+                        <li><a>IT Technologies</a>
+                            <ul>
+                              <li><a href="cybersecurity.html">Cyber Security</a></li>
+                              <li><a href="machineLearning.html">Machine Learning</a></li>
+                              <li><a href="nlp.html">NLP</a></li>
+                              <li><a href="simpleComputingDevices.html">Simple Computing</a></li>
+                            </ul>
+                        </li>
+                      </ul>
+                    </li>
         <li><a href="projectidea.html">Project Idea</a></li>
         <li><a href="projectplan.html">Project Plan</a></li>
-
-
-        </ul>
-      </nav>
-    </div>
+        <li><a>Career</a>
+              <ul>
+                <li><a href="jobAd.html">Job Advertising</a></li>
+                <li><a href="skillsAndJobs.html">Skills & Jobs</a></li>
+              </ul>
+      </li>
+      </ul>
+    </nav>
   </header>
   <!-- Articles are sections for the sectiosn of the assignment  -->
   <article>
@@ -69,17 +62,27 @@
     <h3>Overview</h3>
     <h4>Topic</h4>
     <p>
-      Topic text to here
+      With the focus on multi-driver assistance technology, this project deals with the DrivEase design made to lessen the hassle and provide a smoother experience for multi-driver
+      vehicles by customizing and storing the drivers’ personal settings such as driving seat’s and mirrors’ positions. Our company will be developing a new software that coproduces
+      with Raspberry Pi, the backbone of the world of electronics, to make travel easier and more comfortable.
     </p>
 
   <h4>Motivation</h4>
   <p>
-    Motivation text to here
+    Thanks to the rapid evolution of technology, we are now able to reshape the human-machine connections and develop the application of existing technology so that our daily lives’
+    limitation can basically be alleviated. As the world’s population grows, the demand for vehicle (car in particular) ownership also increases. This inspires us to design an autonomous system
+    that empowers drivers’ journeys.
   </p>
 
   <h4>Landscape</h4>
   <p>
-    Landscapetext to here
+    Despite the availability of many self-operating devices, there are still limitations and constraints that hinder us from designing self-adjusting seat and mirrors position in vehicles.
+    According to Autoblog (“Are Car Seats of the Future Self-Adjusting?”), the new Mercedes-Benz S class already has a driver’s seat with automatically stiffen side bolsters when the vehicle makes
+    a tight turn.  <br><br>
+
+Automakers and automotive suppliers are trying to develop automated seat adjustment but it’s still not on the market yet. Some of the newest car models come with blind-spot detection
+systems that employ cameras and/or radar to scan behind the vehicle while backing up and the adjacent lanes while driving but most of the old models only have rear and side view mirrors to be adjusted.
+Similarly, there is no available devices or technology that offer automation of mirrors adjustment up to this point of time.
   </p>
 </article>
 
@@ -87,43 +90,158 @@
 <article>
   <br>
   <h3>Aims</h3>
+  <h4>What will our project do?</h4>
 
   <p>
-    Topic text to here
+    In this project, DrivEase aims to be a universal car accessory which is easily employed and executed by any driver. It is built to facilitate a personalised user experience
+    by managing driver’s seat and mirror-position settings so that mental stress and wastage of time can be alleviated. Despite the fact that some newer car versions have self-adjusted seats,
+    as far as the current technology can go, such automation is only partially implemented, and when a vehicle is being shared, an individual driver must still go through the manual setting before use. <br><br>
+
+    DrivEase allows drivers to customize their seat and mirror positions on the first usage, i.e. the driver’s seat height, the desired distance from the steering wheel to the seat and
+    the positions of mirrors, etc. to optimize their comfort and save them accordingly. All these personalized data can be retrieved afterwards without drivers have to go through
+    the settings all over again. Drivers can subsequently edit the initial set up and save it again if there are any desired adjustment(s).
+    <br><br>
+    It will then store these data according to different individuals and can be retrieved anytime when needed.
   </p>
+
+  <h4>How will we do it?</h4>
+  <p>
+
+    Raspberry Pi is the core hardware that DrivEase uses. In scenario that the car has a touchscreen, the car will connect to the DrivEase when it’s plugged into the USB port
+    as a device and run the software through the touchscreen on the interior console.
+    <br><br>
+    In the absence of touchscreen in the interior console, the DrivEase will need a comparable display touchscreen monitor, about five inches for example, or an interface with a mobile app.
+    <br><br>
+    This interface/app allows the user to select a driver’s profile and settings for the driver seat and side view mirrors, so the seats’ and mirrors’ position can be automatically adjusted.
+
+
+  </p>
+
+  <h4>How far we have got with developing any features/outcome of the project?</h4>
+
+<p>
+  Reflecting on the aim, we set ourselves the task of moving an object with a Raspberry Pi, this was achieved. It was relatively easy; however, the code wouldn’t be particularly useful in a
+  real prototype as we would be using the car manufactures systems which are already coded to move the seat or mirrors.
+
+  Given we weren’t able get access to an API we looked to build testing out the potential wiring and the User Interface. We also considered what other feature that we could look to
+  incorporate into the overall system. </p>
+<h4>Story of our project (how it began, how it has progressed and what stage of the plan we’re up to) </h4>
+<p> 1. Initial attempts at programming using python and a RaspberryPi
+</p>
+<br>
+
+<main class="grid">
+  <img src="images/plan/1.jpg" style="width:100%">  </div>
+
+  <img src="images/plan/2.jpg" style="width:100%">   </div>
+
+  <img src="images/plan/3.jpg" style="width:100%">   </div>
+
+  <img src="images/plan/4.jpg" style="width:100%">  </div>
+
+  <img src="images/plan/5.jpg" style="width:100%">   </div>
+
+  <img src="images/plan/6.jpg" style="width:100%">   </div>
+</main>
+<br>
+<p>2. Actually getting a servo to move, programmed using code from the internet and wiring maps. Given the time exhausted learning & researching it was decided that time be focused on other aspects. </p> <br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1YVWleK7lDY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>3. We researched car manufactures and whether they had open source API’s however were unable to find any that were available – so building any code that would interact with an API had to be shelved. <br><br>
+  <p>
+4.We then turned our attention to the user interface.  We designed an interface prototype by using Figma to demonstrate how the functionality of the application will be. <br>  <br>
+
+The interface is planned to look like below:
+</p>
+<br>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="890" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FpqsnoQUCyaoOfYqn2eNvCS%2FDriveEase%3Fnode-id%3D2%253A66%26scaling%3Dscale-down" allowfullscreen></iframe>
+<br>
+<br><br>
+<p> 5. Additionally we completed some electrical maps of how we believed the device would be wired to a vehicle.
+<br><br>
+<img src="images/plan/cable.jpg" style="width:100%">
+<br>
+<p>6.Jack took a leading role in creating the video presentation, with an artistic vision of making an advert-style instructional/marketing video about the DrivEase </p><br>
+
+
+<main class="grid">
+  <img src="images/plan/7.jpeg" style="width:100%">  </div>
+
+  <img src="images/plan/8.jpeg" style="width:100%">   </div>
+
+  <img src="images/plan/9.jpeg" style="width:100%">   </div>
+</main>
+<br><br>
+
+<p>7.Wiring Photos </p><br>
+
+
+<main class="grid">
+  <img src="images/plan/10.jpg" style="width:100%">  </div>
+
+  <img src="images/plan/11.jpg" style="width:100%">   </div>
+
+  <img src="images/plan/12.jpg" style="width:100%">   </div>
+
+    <img src="images/plan/13.jpg" style="width:100%">   </div>
+
+</main>
+<br><br>
+
+
+
+<h3>Difficulties Faced:  </h3>
+<p>
+  As all of our team members have humble programming backgrounds, Python in particular, and Raspberry Pi, it was indeed a challenge for us to design and create DrivEase’s prototype. In addition to this, we don’t have a thorough understanding the basics of how a car works or the electronics in cars made in the last 20 years, it was tougher to learn about car mechanisms as well as Python from scratch and facing technical difficulties is inevitable.
+<br><br>
+  We tried making full use of available codes and program logic that we learned from the Introduction to Programming course in Java programming to apply to the design of DrivEase.  However, time is still the main constraint. We encourage more collaboration across the team on the technical part, especially coding. We suggested to combine codes from different members and transfer to our program to test the prototypes or source the existing codes online and customize them to fit our requirements.
+  <br><br>
+  After the comments and feedbacks, we have gotten from Assignment 2, our group considered getting hardware to move in 4 directions – simulating moving a mirror (and software to facilitate) and to move an object 30 cm’s back and forth (& software to facilitate).
+
+</p>
+
+
 </article>
 
 <article>
   <br>
-  <h3>Roles</h3>
-  <h4>Ahmet Polat - CTO & Treasurer </h4>
+  <h3>Roles</h3> <br>
+  <h4>Ahmet Polat - CTO </h4>
   <p>
-    Topic text to here
+    Ahmet will be responsible to lead and to drive technical direction to deliver the projects. He will also be responsible to setup the repository for At US group.
+    His roles also involve managing the updates by conducting the audit trails and communicating with the project group for required changes. He will also be responsible
+    with the concept design and presentation of the project on the website by consulting with the project team on a regular base.
+    Ahmet will also provide a conceptual interface to the mobile application to control the devices which will be functionals in the future revisions.
   </p>
-
+<br>
   <h4>Luke Harding Smith - Chief Engineer </h4>
   <p>
-    Topic text to here
+    Luke’s main responsibility will be to engage with all aspects of the project relating directly to the project concept – the Raspberry Pi, and the vision design for the programming thereof.
+    In addition, he will be helping to write and produce the video presentation for Assignment 5.
   </p>
-
+<br>
   <h4>John Wilkins - Program Manager </h4>
   <p>
-    Topic text to here
+    John will make sure all meetings are prepared and commenced on time, and that everyone is on task for their assigned sections, and that with regards to all other sections,
+    everyone has a chance to contribute in the way best suited to them. In addition, John will be helping with the Project Plan, and editing all text to make sure the writing style is consistent and presentable.
   </p>
-
+<br>
   <h4>Robert Harris - Business Analyst </h4>
   <p>
-    Topic text to here
+    Rob will research the key jobs required for the project moving forward and will create the outline of the job descriptions for others to provide input. Rob will manage the
+    timeframe table to ensure that progress is documented and with the help of the group populate the remaining weeks work effort. Rob will also begin to learn to use the Raspberry Pi
+    and attempt some initial coding in collaboration with our Chief Engineer.
   </p>
-
+<br>
   <h4>Jack Sharples - Creative Director </h4>
   <p>
-    Topic text to here
+    Jack will be taking the lead role of creative director, leading the communication design. He will develop various marketing schemes and strategies for the company.
+    Jack will also serve as the project manager that works directly with anything to do with the creative department.
   </p>
-
+<br>
   <h4>Thi Tuong Bui (Bibianna) - Writer </h4>
   <p>
-    Topic text to here
+    Bibianna will use existing documents and ideas to identify the goals, process and outcomes in an appropriate and comprehensive manner and contribute to the writing of the project plan.
   </p>
 
 </article>
@@ -133,7 +251,7 @@
   <h3>Scope and Limits</h3>
 
   <p>
-    Scope and Limits text to here
+    Our project seeks to prove the possibility of the DrivEase, and to get as far into the development of a prototype as possible in the time allotted. We will intend to spend two to three weeks outlining the specifications and other sections of this document, and a further week producing and developing the deliverable artifacts. This will include the purchase of simple computers for demonstrative purposes as well as a video presentation.
   </p>
 </article>
 
@@ -141,8 +259,48 @@
   <br>
   <h3>Tools and Technologies</h3>
 
-  <p>
-    Tools and Technologies text to here
+  <p>For this project, we will be relying on the following tools and technologies:<br><br>
+
+
+
+    <b><u>Software:</u></b> <br>Python - idle - see below<br><br>
+
+      <b><u>GitHub:</u></b> <br> To store code for software development and communicate through the development stage for revision controls.<br><br>
+
+    <b>   <u>Figma:</u></b> <br>Figma is an interface design tool for websites, mobile application or similar usages.  The application will help At Us to design the UX interface for the mobile
+    phone application to create user profile, setup positions for seat, and mirrors and finally store this information on the application.
+    The software will demonstrate the prototype of the interface to the public.
+    <br><br>
+
+
+<b><u>Python:</u></b> <br>
+ The Raspberry Pi Foundation (the producer of the Raspberry Pi) promotes and advises the use of Python as its primary programming language (Raspberry Pi Foundation, 2020).<br>
+<br>
+Developed software (that will run on the Raspberry PI) that will manage, store and run adjustments on the cars driver’s seat and side and rear-view mirrors when a driver/user profile/setting (for driver seat, side view mirrors and rear-view mirrors position and angle) is selected.
+<br><br>
+
+<b><u>Hardware:</u></b> <br>
+
+
+A Raspberry Pi varying between version 3-4 (suits USB boot capability, inputs, etc.) (Raspberry Pi Foundation, 2020).<br><br>
+
+<b><u>Cabling:</u></b> <br>
+
+<b>Power</b><br>
+USB-C to USB cable for power (USB boot for touch screen/Apple Car Play abled vehicles) <br>
+USB-C to USB Cigarette lighter 12V adapter (for vehicles without USB ports)<br><br>
+<b><u>Connectivity to driver’s seat and mirrors ECU</u></b><br>
+USB to pin motor vehicle wiring adapter/OBD2 adapter/cable for connection to ECU (Electronic Control Unit) for seat and mirrors<br> <br>
+
+<b><u>Touchscreen LCD/monitor, if necessary:</u></b> <br>
+ For early vehicles with no touchscreen/apple car play; to suit Raspberry Pi with cables to suit mini-HDMI cables.<br>
+<br>
+<b><u>Presentation</u></b> <br>
+
+
+iMovie Version 10.1.16
+
+Microsoft Teams Version 1.3.00.26266
   </p>
 </article>
 
@@ -151,7 +309,9 @@
   <h3>Testing</h3>
 
   <p>
-    Testing text to here
+    We will be testing the device as an ongoing part of late-stage development to make sure it meets the size requirements for installation. A prototype will be considered complete once it can be installed into a commercial vehicle and operated by an end-user to adjust the seat and mirror positioning, in a manner that is easier than their normal adjustments. In addition, we will continuously be checking for the logistical requirements of fitting the device into as many vehicles as possible.
+<br><br>
+Once the software is designed are ready to be tested by the users, a prototype will be prepared, and guerrilla testing will be implemented to obtain user feedbacks. Due to the limited budget and time constraints, guerrilla testing is the most suitable method to obtain feedback.  It is planned that 5-usability test will be conducted at initial stage to outline usability pitfalls.  Once the pitfalls are identified, the software and the interface will be revised accordingly.
   </p>
 </article>
 
@@ -159,214 +319,174 @@
   <br>
   <h3>Timeframe</h3>
 
-  <p>
-    Timeframe text to here
-  </p>
+<br>
   <table>
     <!--First Row -->
     <tr>
       <!--The first style does set the size for 1st colum, rest will be devided -->
       <th style="width:5%">Week</th>
       <!--Table headings -->
-      <th>Tasks/Plan ( to be developed over time)</th>
+      <th>Tasks/Plan </th>
       <th>Name</th>
 
     </tr>
     <!--Second Row -->
     <tr>
       <td>1</td>
-      <td>Task 1  plan and task will be here<br>
-          Task 2  plan and task will be here<br>
-          Task 3  plan and task will be here<br>
-          Task 4  plan and task will be here<br></td>
-      <td>Task 1 - Name1<br>
-          Task 2 - Name2<br>
-          Task 3 - Name3<br>
-          Task 4 - Name4<br></td>
+      <td>To determine the aim of the project. <br>
+          Detail what we will change in relation to group processes and communications <br>
+          Set up Git repository and forks <br>
+          Set up meetings and central file <br>
+        Agree Roles <br></td>
+      <td>All<br>
+          All<br>
+        Ahmet<br>
+        John<br>
+          All <br>
+        </td>
     </tr>
     <!--Third Row -->
     <tr>
       <td>2</td>
-      <td>Task 1  plan and task will be here<br>
-          Task 2  plan and task will be here<br>
-          Task 3  plan and task will be here<br>
-          Task 4  plan and task will be here<br></td>
-      <td>Task 1 - Name1<br>
-          Task 2 - Name2<br>
-          Task 3 - Name3<br>
-          Task 4 - Name4<br></td>
-
+      <td>Video Presentation planning and Story Board  <br>
+        Produce outlines for Job descriptions.  <br>
+        High level discussion of the risks.  <br>
+        Agreed aim – develop the software that will enable an object to move using python.  <br>
+        Submit Story Board (8/11/2020) <br> </td>
+      <td>Jack <br>
+          Rob <br>
+          All <br>
+          All <br>
+          Jack <br></td>
     </tr>
        <!--Fourth Row -->
     <tr>
       <td>3</td>
-      <td>Task 1  plan and task will be here<br>
-          Task 2  plan and task will be here<br>
-          Task 3  plan and task will be here<br>
-          Task 4  plan and task will be here<br></td>
-      <td>Task 1 - Name1<br>
-          Task 2 - Name2<br>
-          Task 3 - Name3<br>
-          Task 4 - Name4<br></td>
+      <td>Start shooting video takes – Send to Jack <br>
+          Set up collaboration tools for software design – Figma/GitHub<br>
+          Build out business requirements for delivering project <br>
+          Research code required for business requirements <br>
+          Development of software to interface with hardware (identify hardware components to test) <br> </td>
+      <td>All<br>
+          Ahmet<br>
+          Rob<br>
+          All <br>
+          Rob-Ahmet<br></td>
 
     </tr>
        <!-- Fifth Row -->
     <tr>
       <td>4</td>
-      <td>Task 1  plan and task will be here<br>
-          Task 2  plan and task will be here<br>
-          Task 3  plan and task will be here<br>
-          Task 4  plan and task will be here<br></td>
-      <td>Task 1 - Name1<br>
-          Task 2 - Name2<br>
-          Task 3 - Name3<br>
-          Task 4 - Name4<br></td>
+      <td>Edit video to make sure marks well against rubric <br>
+          Design User interface (Figma)  <br>
+          Schematics  <br>
+          Progress Job Descriptions   <br>
+          Website design  <br></td>
+      <td>Jack <br>
+        Ahmet <br>
+        Luke <br>
+        Rob <br>
+        Ahmet <br> </td>
 
     </tr>
        <!-- Sixth Row -->
     <tr>
       <td>5</td>
-      <td>Task 1  plan and task will be here<br>
-          Task 2  plan and task will be here<br>
-          Task 3  plan and task will be here<br>
-          Task 4  plan and task will be here<br></td>
-      <td>Task 1 - Name1<br>
-          Task 2 - Name2<br>
-          Task 3 - Name3<br>
-          Task 4 - Name4<br></td>
+      <td>Revisit Aim – based on progress <br>
+Determine Project Artefacts - E2E (User interface Wire frames- Raspberry Pi use, code, s Schematics (electronic design)<br> </td>
+      <td>All<br>
+          All<br>
     </tr>
           <!-- 7th Row -->
     <tr>
       <td>6</td>
-      <td>Task 1  plan and task will be here<br>
-          Task 2  plan and task will be here<br>
-          Task 3  plan and task will be here<br>
-          Task 4  plan and task will be here<br></td>
-      <td>Task 1 - Name1<br>
-          Task 2 - Name2<br>
-          Task 3 - Name3<br>
-          Task 4 - Name4<br></td>
+      <td>Deliver first Phase of project:  <br>
+        A3 <br>
+        A5 <br>
+        Presentation <br> </td>
+      <td>All<br>
+          All<br>
+          All<br>
+          </td>
 
     </tr>
     <tr>
       <td>7</td>
-      <td>Task 1  plan and task will be here<br>
-          Task 2  plan and task will be here<br>
-          Task 3  plan and task will be here<br>
-          Task 4  plan and task will be here<br></td>
-      <td>Task 1 - Name1<br>
-          Task 2 - Name2<br>
-          Task 3 - Name3<br>
-          Task 4 - Name4<br></td>
+      <td>Kick off meeting with Investors <br>
+</td>
+      <td>All<br>
+        </td>
 
     </tr>
     <tr>
       <td>8</td>
-      <td>Task 1  plan and task will be here<br>
-          Task 2  plan and task will be here<br>
-          Task 3  plan and task will be here<br>
-          Task 4  plan and task will be here<br></td>
-      <td>Task 1 - Name1<br>
-          Task 2 - Name2<br>
-          Task 3 - Name3<br>
-          Task 4 - Name4<br></td>
+      <td>Post Job Advertisements, engage recruitment firm <br>
+</td>
+      <td>Rob</td>
 
     </tr>
     <tr>
       <td>9</td>
-      <td>Task 1  plan and task will be here<br>
-          Task 2  plan and task will be here<br>
-          Task 3  plan and task will be here<br>
-          Task 4  plan and task will be here<br></td>
-      <td>Task 1 - Name1<br>
-          Task 2 - Name2<br>
-          Task 3 - Name3<br>
-          Task 4 - Name4<br></td>
+      <td>Full detailed project plan documented, scope accepted, solution design<br>
+      </td>
+      <td>All<br>
+      </td>
 
     </tr>
     <tr>
       <td>10</td>
-      <td>Task 1  plan and task will be here<br>
-          Task 2  plan and task will be here<br>
-          Task 3  plan and task will be here<br>
-          Task 4  plan and task will be here<br></td>
-      <td>Task 1 - Name1<br>
-          Task 2 - Name2<br>
-          Task 3 - Name3<br>
-          Task 4 - Name4<br></td>
+      <td>Software and hardware development <br>
+      </td>
+      <td>All<br>
+      </td>
 
     </tr>
     <tr>
       <td>11</td>
-      <td>Task 1  plan and task will be here<br>
-          Task 2  plan and task will be here<br>
-          Task 3  plan and task will be here<br>
-          Task 4  plan and task will be here<br></td>
-      <td>Task 1 - Name1<br>
-          Task 2 - Name2<br>
-          Task 3 - Name3<br>
-          Task 4 - Name4<br></td>
+      <td>UAT<br>
+      </td>
+      <td>All<br>
+</td>
 
     </tr>
     <tr>
       <td>12</td>
-      <td>Task 1  plan and task will be here<br>
-          Task 2  plan and task will be here<br>
-          Task 3  plan and task will be here<br>
-          Task 4  plan and task will be here<br></td>
-      <td>Task 1 - Name1<br>
-          Task 2 - Name2<br>
-          Task 3 - Name3<br>
-          Task 4 - Name4<br></td>
+      <td>Engage & pitch to car company – sign agreement to develop – enabling access to API <br>
+      </td>
+      <td>All<br>
+      </td>
     </tr>
 
     <tr>
       <td>13</td>
-      <td>Task 1  plan and task will be here<br>
-          Task 2  plan and task will be here<br>
-          Task 3  plan and task will be here<br>
-          Task 4  plan and task will be here<br></td>
-      <td>Task 1 - Name1<br>
-          Task 2 - Name2<br>
-          Task 3 - Name3<br>
-          Task 4 - Name4<br></td>
+      <td>Integration & networking <br>
+      </td>
+      <td>All<br>
+      </td>
 
     </tr>
 
     <tr>
       <td>14</td>
-      <td>Task 1  plan and task will be here<br>
-          Task 2  plan and task will be here<br>
-          Task 3  plan and task will be here<br>
-          Task 4  plan and task will be here<br></td>
-      <td>Task 1 - Name1<br>
-          Task 2 - Name2<br>
-          Task 3 - Name3<br>
-          Task 4 - Name4<br></td>
+      <td>Defect rectification  <br>
+        </td>
+      <td>All<br>
+      </td>
 
     </tr>
     <tr>
       <td>15</td>
-      <td>Task 1  plan and task will be here<br>
-          Task 2  plan and task will be here<br>
-          Task 3  plan and task will be here<br>
-          Task 4  plan and task will be here<br></td>
-      <td>Task 1 - Name1<br>
-          Task 2 - Name2<br>
-          Task 3 - Name3<br>
-          Task 4 - Name4<br></td>
+      <td>Pen testing <br>
+        </td>
+      <td>Rob-Ahmet<br>
+      </td>
 
     </tr>
     <tr>
       <td>16</td>
-      <td>Task 1  plan and task will be here<br>
-          Task 2  plan and task will be here<br>
-          Task 3  plan and task will be here<br>
-          Task 4  plan and task will be here<br></td>
-      <td>Task 1 - Name1<br>
-          Task 2 - Name2<br>
-          Task 3 - Name3<br>
-          Task 4 - Name4<br></td>
+      <td>Deliver fully functioning prototype <br>
+        </td>
+      <td>All<br></td>
     </tr>
   </table>
 
@@ -377,6 +497,7 @@
   <h3>Risks</h3>
 
   <p>
+<<<<<<< HEAD
     Risks text to here
   </p>
 </article>
@@ -408,33 +529,44 @@
     D) poorly defined scope and differing views on the interpretation of the scope<br>
     E) lack of motivated members of the team<br>
     F) differences in opinion regarding the specifications of the project.<br>
+=======
+    There is a risk the product is not compelling or perceived as already being available resulting in no investment to develop due to: <br>
+      A) cars already having easy to use systems in place. <br>
+      B) not being easy to put into car without wiring showing <br>
+      C)  not being as easy to make a cost-effective seat moving system <br><br>
+    There is a risk that the product will not appeal to a any customer market and therefore the development costs are lost due to;<br>
+      A) Its perceived that there is a limited shelf life as cars become driverless<br><br>
+    There is a risk of delivering a universal product resulting in an inability to make the business case compelling due to:<br>
+      A) too many cars having a proprietary seat adjustment system<br>
+      B) API may not allow for external adjustment of the seat and mirror positioning<br>
+      C) inability to integrate with car APIs<br>
+      D) lack of access to certain high-volume manufacturers<br><br>
+
+    There is a risk of project delivery failure which will result in an inability to deliver on the agreed aim due to:<br>
+      A) lack of knowledge and understanding of Python<br>
+      B) inexperience using a Raspberry Pi<br>
+      C) lack of resources available on-line specific to connecting Rpi to APIs<br>
+      D) poorly defined scope and differing views on the interpretation of the scope<br>
+      E) lack of motivated members of the team<br>
+      F) differences in opinion regarding the specifications of the project.<br><br>
+>>>>>>> 1c0c4d9ad3ba5e78a4e98e6fc7654ec32520ebea
   </p>
 </article>
 
 
 
 
-<article>
-  <br>
-  <h3>Group processes and communications</h3>
-
-  <p>
-    Group processes and communications text to here
-  </p>
-</article>
 
 
   <article>
       <!--References for the project ideas Currently shows Ahmet's please update with your one -->
       <h3 class="refs">References</h3>
       <p class="refs">
-          Raspberry Pi Foundation, 2020. Usage. [Online]<br>
-          Available at:<a class="reference" href="https://www.raspberrypi.org/documentation/usage/">https://www.raspberrypi.org/documentation/usage/</a>
-            <br>[Accessed October 2020].<br><br>
+          Autoblog. “Are Car Seats of the Future Self-Adjusting?” <br>
+          Available at:<a class="reference" href="https://www.autoblog.com/2014/02/24/future-car-seats-automatic-adjustment/">https://www.autoblog.com/2014/02/24/future-car-seats-automatic-adjustment/</a>
+            <br>[Accessed November 8, 2020.].<br><br>
 
-          Wikipedia, 2020. Raspberry Pi. [Online] <br>
-          Available at: <a class="reference" href="https://en.wikipedia.org/wiki/Raspberry_Pi"> https://en.wikipedia.org/wiki/Raspberry_Pi</a> <br>
-          [Accessed October 2020].<br><br>
+
       </p>
   </article>
   <!--Footter section for copyright & links to our repository & canvas areas -->
